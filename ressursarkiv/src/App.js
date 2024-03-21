@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div>
+      <nav>
         <Routes>
           <Route path="/" element={<Resources category="html"/>} />
           <Route path="/html" element={<Resources category="html" />} />
@@ -15,7 +15,7 @@ function App() {
           <Route path="/react" element={<Resources category="react" />} />
           <Route path="/sanity" element={<Resources category="headless-cms" />} />
         </Routes>
-      </div>
+      </nav>
     </Router>
   );
 }

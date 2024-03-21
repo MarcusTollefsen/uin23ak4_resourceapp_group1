@@ -4,7 +4,7 @@ import '../App.css';
 
 export default function SanityPage () {
   return (
-    <div>
+    <div className='tab'>
       <h2>Sanity</h2>
       <Resources category="headless-cms" />
     </div>
