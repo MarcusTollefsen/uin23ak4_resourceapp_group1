@@ -13,7 +13,7 @@ const Resources = ({ category }) => {
       <Header />
       <Navigation />
 
-    <div>
+    <nav>
       <h2>{category.toUpperCase()}</h2>
       <ul>
         {filteredResources.map((resource, index) => (
@@ -24,7 +24,7 @@ const Resources = ({ category }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
     </>
   );
 };
