@@ -13,7 +13,7 @@ const Resources = ({ category }) => {
       <Header />
       <Navigation />
 
-    <nav className='tab'>
+    <nav>
       <h2>{category.toUpperCase()}</h2>
       <ul>
         {filteredResources.map((resource, index) => (

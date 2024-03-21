@@ -4,7 +4,7 @@ import '../App.css';
 
 export default function CssPage () {
   return (
-    <div>
+    <div className='tab'>
       <h2>Css</h2>
       <Resources category="css" />
     </div>
