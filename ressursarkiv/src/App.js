@@ -1,12 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Resources from './components//Resources';
-import './App.css';
-
+import Header from './components/header';
+import './styles/main.scss';
 function App() {
   return (
+    <>
+    <Header/>
     <Router>
-      <nav>
+      <div className='navi'>
         <Routes>
           <Route path="/" element={<Resources category="html"/>} />
           <Route path="/html" element={<Resources category="html" />} />
@@ -15,8 +17,9 @@ function App() {
           <Route path="/react" element={<Resources category="react" />} />
           <Route path="/sanity" element={<Resources category="headless-cms" />} />
         </Routes>
-      </nav>
+      </div>
     </Router>
+    </>
   );
 }
 

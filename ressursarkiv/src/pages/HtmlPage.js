@@ -1,10 +1,10 @@
 import React from 'react';
 import Resources from '../components/Resources';
-import '../App.css';
+import '../styles/main.scss';
 
 export default function HtmlPage () {
   return (
-    <div className='tab'>
+    <div>
       <h2>HTML</h2>
       <Resources category="html" />
     </div>

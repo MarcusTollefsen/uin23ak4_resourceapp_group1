@@ -1,0 +1,37 @@
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navig{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    max-width: 400px;
+    width: 100%;
+    background-color: $lightgrey;
+    list-style: none;
+}
+
+button{
+    background-color: $navy;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    font-family: $fontFamily;
+    border: none;
+    background-color: $navy;
+    color: $white;
+}
+
+button a{
+    color: $white;
+}
+
+
+
+button:active{
+    background-color: $white !important; 
+}
