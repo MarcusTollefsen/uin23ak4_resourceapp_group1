@@ -1,10 +1,10 @@
 import React from 'react';
 import Resources from '../components/Resources';
-import '../App.css';
+import '../styles/main.scss';
 
 export default function JavascriptPage () {
   return (
-    <div className='tab'>
+    <div>
       <h2>JavaScript</h2>
       <Resources category="javascript" />
     </div>

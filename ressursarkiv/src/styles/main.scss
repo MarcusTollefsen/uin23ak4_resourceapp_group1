@@ -1,0 +1,17 @@
+@import 'colors';
+@import 'font';
+@import 'nav';
+@import 'wrapper';
+@import 'content';
+@import 'header';
+
+#root{
+    max-width: 400px;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: $lightgrey;
+    }

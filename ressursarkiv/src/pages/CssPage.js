@@ -1,10 +1,10 @@
 import React from 'react';
 import Resources from '../components/Resources';
-import '../App.css';
+import '../styles/main.scss';
 
 export default function CssPage () {
   return (
-    <div className='tab'>
+    <div>
       <h2>Css</h2>
       <Resources category="css" />
     </div>

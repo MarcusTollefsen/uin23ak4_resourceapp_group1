@@ -1,7 +1,6 @@
 import React from 'react';
 import { resources } from '../assets/ressurser';
-import '../App.css';
-import Header from './header';
+import '../styles/main.scss';
 import Navigation from './Navigation';
 
 const Resources = ({ category }) => {
@@ -10,10 +9,10 @@ const Resources = ({ category }) => {
 
   return (
     <>
-      <Header />
+      
       <Navigation />
 
-    <nav>
+    <main>
       <h2>{category.toUpperCase()}</h2>
       <ul>
         {filteredResources.map((resource, index) => (
@@ -24,7 +23,7 @@ const Resources = ({ category }) => {
           </li>
         ))}
       </ul>
-    </nav>
+    </main>
     </>
   );
 };
