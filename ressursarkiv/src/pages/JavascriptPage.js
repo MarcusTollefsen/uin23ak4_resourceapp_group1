@@ -1,5 +1,6 @@
 import React from 'react';
 import Resources from '../components/Resources';
+import '../App.css';
 
 export default function JavascriptPage () {
   return (

@@ -1,7 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components//header';
-import Navigation from './components/Navigation';
 import Resources from './components//Resources';
 import './App.css';
 
@@ -9,9 +7,8 @@ function App() {
   return (
     <Router>
       <div>
-        <Header />
-        <Navigation />
         <Routes>
+          <Route path="/" element={<Resources category="html"/>} />
           <Route path="/html" element={<Resources category="html" />} />
           <Route path="/css" element={<Resources category="css" />} />
           <Route path="/javascript" element={<Resources category="javascript" />} />

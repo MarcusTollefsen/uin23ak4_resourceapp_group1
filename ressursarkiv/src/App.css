@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 :root {
     --red: #DA291C;
     --yellow: #FFD700;
-    --blue: #006DB7;
+    --navy: #2A324B;
     --green: #00AF4D;
-    --white: #FFFFFF;
+    --white: #FFF;
     --black: #000000;
     --cyan: #008B8B;
     --light-gray: #D3D3D3;
@@ -17,48 +17,45 @@ body{
     width: 100%;
     max-width: var(--maxwidth);
     margin: 0 auto;
-}
-
-header {
-    width: 100%;
-    max-width: var(--maxwidth);
-    border: 1px solid var(--light-gray);
-    overflow: hidden;
-    margin: 0 auto;
-    padding: 2rem;
-    margin-top: 5rem;
+    background-color: var(--light-gray);
 }
 
 nav{
-    width: 100%;
-    max-width: var(--maxwidth);
-    margin: 0 auto;
-    overflow: hidden;
-    padding-top: 1.5rem;
-    
+    background-color: var(--white);
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
 }
 
+nav li a{
+    text-decoration: none
+}
+
+
 nav button{
-    background-color: var(--light-gray);
+    background-color: var(--navy);
     border: none;
-    color: var(--black);
+    color: var(--white);
     cursor: pointer;
     padding: 16px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
 
 nav button.active{
-    background-color: var(--cyan);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--navy);
 }
 
 .tab{
     display: none;
     padding: 6px 12px;
-    border-top: 10px solid var(--cyan);
     border-left: 1px solid var(--light-gray);
     border-bottom: 1px solid var(--light-gray);
     border-right: 1px solid var(--light-gray);
@@ -69,14 +66,13 @@ nav button.active{
     padding: 2rem;
 }
 
-h3{
+h2{
     font-size: 20px;
     text-transform: uppercase;
 }
 
-div ul{
-    padding: 1rem;
-    padding-top: 0;
+.tab-sources{
+width: 100%;
 }
 
 a{

@@ -1,13 +1,20 @@
 import React from 'react';
 import { resources } from '../assets/ressurser';
+import '../App.css';
+import Header from './header';
+import Navigation from './Navigation';
 
 const Resources = ({ category }) => {
   const filteredResources = resources ? resources.filter(resource => resource.category === category) : [];
 
 
   return (
+    <>
+      <Header />
+      <Navigation />
+
     <div>
-      <h2>{category.toUpperCase()} Ressurser</h2>
+      <h2>{category.toUpperCase()}</h2>
       <ul>
         {filteredResources.map((resource, index) => (
           <li key={index}>
@@ -18,6 +25,7 @@ const Resources = ({ category }) => {
         ))}
       </ul>
     </div>
+    </>
   );
 };
 
